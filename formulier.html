@@ -12,10 +12,67 @@
 <form>
 <fieldset>
     <legend>Personalia</legend>
-        <input type="text" name="naam" size="25" required><br>
-        <input type="text" name="voornaam" size="25"><br>
-        <input type="text" name="adres" size="50">
+        <label>Naam</label>
+            <input type="text" name="naam" size="25" required><br>
+        <label>Voornaam</label>
+            <input type="text" name="voornaam" size="25"><br>
+        <label>Adres</label>
+            <input type="text" name="adres" size="50">
 </fieldset>
+</form><br>
+<form>
+    <label>Voornaam</label>
+        <input type="text" name="Voornaam" size="50"><br>
+    <label>Opmerkingen</label>
+        <textarea name="Opmerkingen" rows="5" cols="50" placeholder="Typ je opmerkingen"></textarea><br>
+    <label>Leeftijd</label>
+        <input type="number" name="Leeftijd" min="0" max="120"><br>
+    <label>E-mailadres</label>
+        <input type="email" name="E-mailadres" maxlength="30"><br>
+    <label>Wachtwoord</label>
+        <input type="password" name="Wachtwoord" maxlength="20" size="20">
+</form><br>
+<hr>
+<form>
+    <label>Voornaam</label>
+        <input type="text" name="Voornaam" size="50"><br>
+    <label>E-mailadres</label>
+        <input type="email" name="E-mailadres" maxlength="30"><br>
+    <label>Hobby's</label>
+        <select name="Hobby's" size="2">
+            <option value="Sporten">Sporten</option>
+            <option value="Tuinieren">Tuinieren</option>
+            <option value="Winkelen">Winkelen</option>
+            <option value="Lezen">Lezen</option>
+            <option value="Uitgaan">Uitgaan</option>
+            <option value="Reizen">Reizen</option>
+        </select><br>
+    <label>Favoriete muziek</label><br>
+        <input type="checkbox" name="Rock"><label>Rock</label><br>
+        <input type="checkbox" name="Pop"><label>Pop</label><br>
+        <input type="checkbox" name="Jazz"><label>Jazz</label><br>
+        <input type="checkbox" name="Klassiek"><label>Klassiek</label><br>
+    <label>Rijbewijs</label>
+        <input type="radio" name="Ja" value="Ja"><label>Ja</label>
+        <input type="radio" name="Nee" value="Nee" checked><label>Nee</label>
+</form>
+<hr>
+<form>
+    <label>Voornaam</label>
+        <input type="text" name="Voornaam" size="20"><br>
+    <label>Geslacht</label>
+        <input type="radio" name="geslacht" value="M" checked><label>Man</label>
+        <input type="radio" name="geslacht" value="V"><label>Vrouw</label><br>
+    <label>Leeftijd</label>
+        <input type="number" name="Leeftijd" min="0" max="120"><br>
+    <label>E-mailadres</label>
+        <input type="email" name="E-mailadres" maxlength="30"><br>
+    <label>Talenkennis</label><br>
+        <input type="checkbox" name="Frans"><label>Frans</label><br>
+        <input type="checkbox" name="Engels"><label>Engels</label><br>
+        <input type="checkbox" name="Duits"><label>Duits</label><br>
+        <button type="submit">Versturen</button>
+        <button type="reset">Leegmaken</button>
 </form>
 </body>
 </html>
